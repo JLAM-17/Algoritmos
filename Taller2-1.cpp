@@ -10,7 +10,7 @@ int main() {
   m[3] = "Tercero";
   map<int,string> :: iterator it = m.begin();
   while (it != m.end()){
-    std::cout << (*it).first << (*it).second << '\n';
+    std::cout << it->first << it->second << '\n';
     it ++;
   }
   m.erase(2);
